@@ -6,26 +6,34 @@
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css'>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
 
     <!-- Fontes link, adiconar a todo o corpo da pagina-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="icomon/font.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Sigura | Segurança para sua diversão</title>
+
+    <title>Document</title>
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/script.js"></script>
+
+    <!-- Start Menu Social -->
+    <section>
+        <div class="social-bar ">
+            <a href="#" class="icone icone-facebook" target="_blank"></a>
+            <a href="#" class="icone icone-twitter" target="_blank"></a>
+            <a href="#" class="icone icone-youtube" target="_blank"></a>
+            <a href="#" class="icone icone-instagram" target="_blank"></a>
+        </div>
+    </section>
+    <!-- End Menu Social-->
+
     <!-- Inicio section principal -->
-    <section id="main" class="hero is-fullheight main">
+    <section class="hero is-fullheight main">
         <div id="flow">
             <span class="flow-1"></span>
             <span class="flow-2"></span>
@@ -37,16 +45,16 @@
                     <div class="navbar-item ">
                         <img src="assets/img/Sigura.png" alt="Logo">
                     </div>
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
+                    <span class="navbar-burger burger" data-target="navbarMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
                 </div>
-                <div id="navbarMenuHeroC" class="navbar-menu">
+                <div id="navbarMenu" class="navbar-menu">
                     <div class="navbar-end">
                         <span class="navbar-item">
-                            <a class="button is-primary" href="#main">
+                            <a class="button is-primary" href="#">
                                 <span class="icon">
                                     <img src="assets/img/home1.png">
                                 </span>
@@ -54,7 +62,7 @@
                             </a>
                         </span>
                         <span class="navbar-item">
-                            <a class="button is-primary " href="#contato">
+                            <a class="button is-primary " href="#">
                                 <!-- é so passar um caminho para colocar o icone em cada "icon" -->
                                 <span class="icon">
                                     <img src="assets/img/email2.png">
@@ -63,7 +71,7 @@
                             </a>
                         </span>
                         <span class="navbar-item">
-                            <a class="button is-primary " href="#ajuda">
+                            <a class="button is-primary " href="#">
                                 <span class="icon">
                                     <img src="assets/img/help1.png">
                                 </span>
@@ -71,7 +79,7 @@
                             </a>
                         </span>
                         <span class="navbar-item">
-                            <a class="button is-primary" href="#login">
+                            <a class="button is-primary" href="#">
                                 <span class="icon">
                                     <img src="assets/img/outline_person_white_18dp.png">
                                 </span>
@@ -85,89 +93,122 @@
 
         <!-- Titulo e subtitulo centralizado -->
         <div class="hero-body ">
-            <div class="inner"></div>
             <div class="container has-text-centered">
                 <h1 class="title is-2 colorTitle is-outlined">
-                    Não tem onde deixar seus pertences<br/> para curtir a praia?
+                    Não tem onde deixar seus pertences para curtir a praia?
                 </h1>
             </div>
         </div>
-        <div class="arrow-bottom"><a class="btn-arrow-bottom"><i class="fas fa-arrow-down"></i></a></div>
+
         <!-- Fim do Titulo centralizado -->
+        </div>
     </section>
     <!-- Fim da section principal -->
 
 
     <!-- Inicio Section do Video -->
-    <section id="animation" class="animation-content">
+    <section class="animation-content">
         <h2 class="description-title">É simples usar...</h2>
         <iframe src="https://player.vimeo.com/video/285744145" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
             allowfullscreen></iframe>
     </section>
     <!-- Fim Section do Video -->
 
-    <!-- Inicio da section Cards -->
-    <section>
-        <section class="description-content">
-            <div class="description">
-                <h2 class="description-title">Resolvemos seu problema</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis.
-                    Nunc risus ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
-            </div>
-            <div class="cards-content">
-                <div class="card-info">
-                    <div class="card-icone">
-                        <!-- icone <i></i> -->
-                    </div>
-                    <div class="card-description">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis.
-                            Nunc risus ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
-                    </div>
+    <!-- Start of section Cards -->
+    <section class="description-content">
+        <div class="description">
+            <h2 class="description-title">Resolvemos seu problema</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis. Nunc risus
+                ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
+        </div>
+        <div class="cards-content">
+            <div class="card-info">
+                <div class="card-icone">
+                    <!-- icone <i></i> -->
                 </div>
-                <div class="card-info">
-                    <div class="card-icone">
-                        <!-- icone <i></i> -->
-                    </div>
-                    <div class="card-description">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis.
-                            Nunc risus ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
-                    </div>
-                </div>
-                <div class="card-info">
-                    <div class="card-icone">
-                        <!-- icone <i></i> -->
-                    </div>
-                    <div class="card-description">
-                        <h2>Lorem ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis.
-                            Nunc risus ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
-                    </div>
+                <div class="card-description">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis.
+                        Nunc risus ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
                 </div>
             </div>
-        </section>
-    </section>
-    <!-- Fim da section Cards -->
-
-
-    <!-- Inicio Menu Social -->
-    <section>
-        <div class="social-bar ">
-            <a href="#" class="icone icone-facebook" target="_blank"></a>
-            <a href="#" class="icone icone-twitter" target="_blank"></a>
-            <a href="#" class="icone icone-youtube" target="_blank"></a>
-            <a href="#" class="icone icone-instagram" target="_blank"></a>
+            <div class="card-info">
+                <div class="card-icone">
+                    <!-- icone <i></i> -->
+                </div>
+                <div class="card-description">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis.
+                        Nunc risus ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="card-icone">
+                    <!-- icone <i></i> -->
+                </div>
+                <div class="card-description">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum porta dolor eu convallis.
+                        Nunc risus ex, dictum vitae ligula non, lobortis porta sapien. Nam venenatis eu sapien in sodales.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- Fim Menu Social, podendo acrescentar mais iconees sociais e o esta configurada para arredendar as bordas sempre no ultimo child -->
+    <!-- End of section Cards -->
 
+    <!-- Start App-->
+    <section>
+        <div class="startApp">
+            <p>
+                <strong>Baixe e abra sua conta. </strong>
+            </p>
+            <div class="buttonApp">
+                <a href="itunes.com">
+                    <picture>
+                        <!-- Possibilidade de adiconar imagens de acordo com o tipo de dispositivo-->
+                        <img src="assets/img//Google/googleicon.png" alt="Android">
+                    </picture>
+                </a>
+                <a href="playstore.com">
+                    <picture>
+                        <!-- Possibilidade de adiconar imagens de acordo com o tipo de dispositivo-->
+                        <img src="assets/img//Apple/appleicon.png" alt="Apple">
+                    </picture>
+                </a>
 
-    <!-- Inicio do meu footer-->
+            </div>
+        </div>
+    </section>
+    <!-- End App  -->
 
-
-
-    <!-- Fim do meu footer -->
+    <!-- Start footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div id="mobfooter" class="soc fo-icon">
+                    <a href="#">
+                        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <br>
+                <p>
+                    <strong>© 2018.</strong> Todos os direitos reservados. Sigura - São Paulo, s/nº, Bela Vista, São Paulo/SP, 08050-900,
+                    Brasil. CNPJ: 98.989.989.9898-98
+                    <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
 
 
 </body>
