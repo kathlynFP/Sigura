@@ -1,59 +1,55 @@
-/* Menu Principal Responsivo */
 
-body{
-	padding: 0;
-	margin: 0;
-	background-color: rgba(0, 99, 90, 0.8);
+/* Inicio da Section Principal */
+.hero-body{
+	padding: 0%;
+}
+.main {
+	background-image: url("../img/fundo2.jpg")  ;
+	 background-repeat: no-repeat;
 	background-size: cover;
-}
-header {
-	height: 100vw;
-}
-
-nav {
-	display: flex;
-	justify-content: flex-end;
-	padding: 2em;
+	z-index: -1;
+	/* background-position-y: 50%; */
 }
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
+.inner {
+	background: linear-gradient(180deg, rgba(18, 223, 206, 0.322) 0, #fff56c);
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
 }
 
-a {
-	position: relative;
-	display: inline-block;
-	padding: 1em;
-	text-decoration: none;
+.colorTitle{
+	/* color: #e8e8e8; */
 	color: #fff;
+
 }
 
-a:hover {
-	color: rgba(255, 255, 255, 0.034);
+.arrow-bottom {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0px;
+	z-index: 3;
+	padding-bottom: 20px;
 }
 
-@media all and (max-width: 800px) {
-	ul {
-		flex-grow: 1;
-		justify-content: space-around;
-	}
+.btn-arrow-bottom {
+	color: rgba(0, 0, 0, 0.75);
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.75);
+	width: 20px;
+	height: 20px;
+	padding: 5px 7px;
 }
 
-@media all and (max-width: 600px) {
-	ul {
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-	}
-}
+/* .title{
+	top: 180vw;
+	background: #83e6eb52;
+	border-radius: 2rem 2rem 2rem 2rem;
+} */
+/* Fim da section Principal */
 
-/* Fim do Menu Principal responsivo */
-
-/* Menu social Flutuante */
-
+/* Inicio Menu social Flutuante */
 .social-bar {
 	position: fixed;
 	left: 0;
@@ -65,39 +61,204 @@ a:hover {
 	z-index: 100;
 }
 
-.icon {
+.icone {
 	color: white;
 	text-decoration: none;
 	padding: .7rem;
 	display: flex;
 	transition: all .5s;
+	border-radius: 0 0 0 0;
+	box-shadow: inset 0 0 5em rgba(18, 223, 206, 0.384);
 }
 
-.icon-facebook {
-	background: #2E406E;
+.icone-facebook {
+	/* border-right: #42eef4;
+	background: #2E406E; */
 	border-radius: 0 1rem 0 0;
 }
 
-.icon-twitter {
+/* .icone-twitter{
+
 	background: #339DC5;
 }
 
-.icon-youtube {
+.icone-youtube {
 	background: #E83028;
 }
 
-.icon-instagram {
+.icone-instagram {
 	background: #3F60A5;
-}
+} */
 
-.icon:last-child {
+.icone:last-child {
 	border-radius: 0 0 1rem 0;
 }
 
-.icon:hover {
+.icone:hover {
+	background:   rgba(18, 223, 206, 0.384); 
 	padding-left: 3rem;
 	border-radius: 0 1rem 1rem 0;
 	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
 }
 
+@media (max-width: 1087px) {
+	.social-bar{
+		display: none;
+	}
+}
+
 /* Fim do Menu social Flutuante */
+
+/* Inicio Efeito de onda */
+
+#flow span {
+	display: block;
+	width: 200vw;
+	height: 200vw;
+	position: fixed;
+	top: -180vw;
+	left: -50vw;
+	border-radius: 90vw;
+	opacity: 0.6;
+	z-index: -2;
+}
+
+.flow-1 {
+	background: #3281ff;
+	-webkit-animation: rotating 20s linear infinite;
+	-moz-animation: rotating 20s linear infinite;
+	-ms-animation: rotating 20s linear infinite;
+	-o-animation: rotating 20s linear infinite;
+	animation: rotating 20s linear infinite;
+}
+
+.flow-2 {
+	background: #f442ee;
+	position: absolute;
+	-webkit-animation: rotating 15s linear infinite;
+	-moz-animation: rotating 15s linear infinite;
+	-ms-animation: rotating 15s linear infinite;
+	-o-animation: rotating 15s linear infinite;
+	animation: rotating 15s linear infinite;
+}
+
+.flow-3 {
+	background: #42eef4;
+	position: absolute;
+	-webkit-animation: rotating 7s linear infinite;
+	-moz-animation: rotating 7s linear infinite;
+	-ms-animation: rotating 7s linear infinite;
+	-o-animation: rotating 7s linear infinite;
+	animation: rotating 7s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+	from {
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotating {
+	from {
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	to {
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.rotating {
+	-webkit-animation: rotating 2s linear infinite;
+	-moz-animation: rotating 2s linear infinite;
+	-ms-animation: rotating 2s linear infinite;
+	-o-animation: rotating 2s linear infinite;
+	animation: rotating 2s linear infinite;
+}
+/* Fim efeito de onda */
+
+
+/* section cards */
+.description-content{
+    background-color: rgba(194, 218, 216, 0.25);
+    /* height: 100vh; */
+    overflow: hidden;
+    padding: 42px 7%;
+}
+.cards-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-info{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: table;
+    border-radius: 10px;
+    margin: 32px 10px;
+    box-shadow: 3px 3px 14px -1px rgba(0,0,0,0.57);
+
+}
+.card-icone{
+    background-color: rgb(18, 223, 206);
+    width: 350px;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+    margin:0 auto;
+}
+.card-description{
+    background-color: #fff;
+    padding: 30px 24px 24px;
+    border-radius: 0 0 10px 10px;
+
+}
+.description{
+    display: block;
+    margin: 32px 0;
+    max-width: 900px;
+}
+.description p{
+    margin: 16px 0px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.description-title{
+    font-size: 2.4em;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.95);
+}
+.card-description h2{
+    font-weight: 400;
+}
+.card-description p{
+    margin: 10px 0;
+}
+/* section da animação */
+.animation-content{
+    padding: 42px 7% 0;
+    background-color: rgba(194, 218, 216, 0.25);
+}
+.animation-content .description-title{
+    margin: 0 0 42px 0;
+}
+/* Fim dos CARDS */
+
+

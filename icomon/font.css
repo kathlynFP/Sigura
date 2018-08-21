@@ -9,7 +9,7 @@
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icone-"], [class*=" icone-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -24,16 +24,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
+.icone-facebook:before {
   content: "\ea90";
 }
-.icon-instagram:before {
+.icone-instagram:before {
   content: "\ea92";
 }
-.icon-twitter:before {
+.icone-twitter:before {
   content: "\ea96";
 }
-.icon-youtube:before {
+.icone-youtube:before {
   content: "\ea9d";
 }
 
